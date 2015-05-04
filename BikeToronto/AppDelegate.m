@@ -1,12 +1,6 @@
-//
-//  AppDelegate.m
-//  BikeToronto
-//
-//  Created by Catherine Reyto on 2015-05-04.
-//  Copyright (c) 2015 Catherine Reyto. All rights reserved.
-//
 
 #import "AppDelegate.h"
+#import "MapViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,8 +11,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+  
+    
+    MapViewController *mapViewController = [[MapViewController alloc] init];
+    mapViewController.title = @"Maps";
+    UIViewController *moreInfoViewController = [[UIViewController alloc] init];
+    moreInfoViewController.title = @"More Info";
+    mapViewController.view.backgroundColor = [UIColor blueColor];
+    mapViewController.view.backgroundColor = [UIColor redColor];
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    
+    [tabBarController setViewControllers:@[mapViewController, moreInfoViewController]];
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    self.window.rootViewController = tabBarController;
     return YES;
+
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

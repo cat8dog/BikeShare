@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		28FA6CED1AF81A2D006AB9DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FA6CEC1AF81A2D006AB9DF /* main.m */; };
 		28FA6CF01AF81A2D006AB9DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FA6CEF1AF81A2D006AB9DF /* AppDelegate.m */; };
-		28FA6CF31AF81A2D006AB9DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FA6CF21AF81A2D006AB9DF /* ViewController.m */; };
 		28FA6CF61AF81A2D006AB9DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28FA6CF41AF81A2D006AB9DF /* Main.storyboard */; };
 		28FA6CF81AF81A2D006AB9DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28FA6CF71AF81A2D006AB9DF /* Images.xcassets */; };
 		28FA6CFB1AF81A2D006AB9DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28FA6CF91AF81A2D006AB9DF /* LaunchScreen.xib */; };
 		28FA6D071AF81A2D006AB9DF /* BikeTorontoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FA6D061AF81A2D006AB9DF /* BikeTorontoTests.m */; };
+		28FA6D121AF81AE9006AB9DF /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FA6D111AF81AE9006AB9DF /* MapViewController.m */; };
+		28FA6D141AF81BE0006AB9DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FA6D131AF81BE0006AB9DF /* MapKit.framework */; };
+		28FA6D161AF81CFD006AB9DF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FA6D151AF81CFD006AB9DF /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,17 @@
 		28FA6CEC1AF81A2D006AB9DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28FA6CEE1AF81A2D006AB9DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28FA6CEF1AF81A2D006AB9DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		28FA6CF11AF81A2D006AB9DF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		28FA6CF21AF81A2D006AB9DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		28FA6CF51AF81A2D006AB9DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28FA6CF71AF81A2D006AB9DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		28FA6CFA1AF81A2D006AB9DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		28FA6D001AF81A2D006AB9DF /* BikeTorontoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikeTorontoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28FA6D051AF81A2D006AB9DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28FA6D061AF81A2D006AB9DF /* BikeTorontoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BikeTorontoTests.m; sourceTree = "<group>"; };
+		28FA6D101AF81AE9006AB9DF /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		28FA6D111AF81AE9006AB9DF /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		28FA6D131AF81BE0006AB9DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		28FA6D151AF81CFD006AB9DF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		28FA6D171AF823EC006AB9DF /* poop_smiley */ = {isa = PBXFileReference; lastKnownFileType = file; name = poop_smiley; path = ../../../../poop_smiley; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28FA6D161AF81CFD006AB9DF /* CoreLocation.framework in Frameworks */,
+				28FA6D141AF81BE0006AB9DF /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +70,8 @@
 		28FA6CDE1AF81A2D006AB9DF = {
 			isa = PBXGroup;
 			children = (
+				28FA6D151AF81CFD006AB9DF /* CoreLocation.framework */,
+				28FA6D131AF81BE0006AB9DF /* MapKit.framework */,
 				28FA6CE91AF81A2D006AB9DF /* BikeToronto */,
 				28FA6D031AF81A2D006AB9DF /* BikeTorontoTests */,
 				28FA6CE81AF81A2D006AB9DF /* Products */,
@@ -81,14 +90,15 @@
 		28FA6CE91AF81A2D006AB9DF /* BikeToronto */ = {
 			isa = PBXGroup;
 			children = (
+				28FA6D171AF823EC006AB9DF /* poop_smiley */,
 				28FA6CEE1AF81A2D006AB9DF /* AppDelegate.h */,
 				28FA6CEF1AF81A2D006AB9DF /* AppDelegate.m */,
-				28FA6CF11AF81A2D006AB9DF /* ViewController.h */,
-				28FA6CF21AF81A2D006AB9DF /* ViewController.m */,
 				28FA6CF41AF81A2D006AB9DF /* Main.storyboard */,
 				28FA6CF71AF81A2D006AB9DF /* Images.xcassets */,
 				28FA6CF91AF81A2D006AB9DF /* LaunchScreen.xib */,
 				28FA6CEA1AF81A2D006AB9DF /* Supporting Files */,
+				28FA6D101AF81AE9006AB9DF /* MapViewController.h */,
+				28FA6D111AF81AE9006AB9DF /* MapViewController.m */,
 			);
 			path = BikeToronto;
 			sourceTree = "<group>";
@@ -219,7 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28FA6CF31AF81A2D006AB9DF /* ViewController.m in Sources */,
+				28FA6D121AF81AE9006AB9DF /* MapViewController.m in Sources */,
 				28FA6CF01AF81A2D006AB9DF /* AppDelegate.m in Sources */,
 				28FA6CED1AF81A2D006AB9DF /* main.m in Sources */,
 			);
